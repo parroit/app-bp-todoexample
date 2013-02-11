@@ -1,0 +1,16 @@
+{
+    "name": "app-bp-todoexample",
+    "version": "0.0.1",
+    "description": "A todo app example using app-bp",
+    "author": "Andrea Parodi",
+    "keywords": ["angular", "h5bp", "mvc","mongodb","bootstrap", "boilerplate","todo","example"],
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/parroit/app-bp-todoexample.git"
+    },
+    "dependencies": {
+        "app-bp": "0.0.4"
+    },
+    "engines": { "node": "*" }
+
+}

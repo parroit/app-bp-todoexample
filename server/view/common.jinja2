@@ -1,0 +1,20 @@
+{% let page_description = 'an app-bp todo app example' %}
+{% let google_analytics = 'UA-33554066-1' %}
+{% let site_name = '<i class="icon-cogs"></i> Done!' %}
+
+
+{% block top_menu %}
+    <li><a href="todos#/list">todo list</a></li>
+    <li><a href="todos#/import">import</a></li>
+    <li><a href="about">About</a></li>
+
+{% endblock %}
+
+
+{%  block footer %}
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="navbar-inner">
+            <p class="pull-right">by <a href="http://ebansoftware.net">Andrea Parodi</a></p>
+        </div>
+    </div>
+{%  endblock %}

@@ -1,0 +1,160 @@
+
+
+.workBox {
+    border: none;
+
+    padding: 8px;
+
+
+}
+
+.workBox.placeholder {
+    opacity: 0.2;
+
+}
+
+
+.workBox-container {
+    border: 1px solid #7c939b;
+
+    -moz-box-shadow: 5px 5px 2px #009be7;
+    -webkit-box-shadow: 5px 5px 2px #009be7;
+    box-shadow: 3px 3px 11px #e6e6fa;
+    margin: 50px;
+
+    padding: 8px;
+    background: rgba(238, 238, 238,0.96);
+
+}
+
+.hidden{
+    display: none;
+}
+
+.workBox-header, .workBox-body,.workBox-footer{
+    border: 1px solid #686b66;
+    padding: 5px 15px;
+    -moz-box-shadow: 5px 5px 2px #7c939b;
+    -webkit-box-shadow: 5px 5px 2px  #7c939b;
+    box-shadow: 5px 5px 2px  #7c939b;
+}
+.workBox-header{
+    background-color: #d3d3d3;
+
+
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px ridge #686b66;;
+
+}
+.app-error .appBox-body{
+    background-color: rgb(240, 129, 107);
+}
+.workBox-body{
+    background-color: #ffffff;
+    border-top: none;
+    border-bottom: none;
+    height: 80px;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 0 0 0 0;
+    overflow: auto;
+
+}
+.workBox-body textarea{
+    overflow: visible;
+}
+.workBox-footer{
+    background-color: #d3d3d3;
+
+    border-top: 1px ridge #686b66;;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 0 0 12px 12px;
+
+}
+
+
+.toolbar {
+    border: 1px solid #7b7b7b;
+
+    -moz-box-shadow: 5px 5px #ababab;
+    -webkit-box-shadow: 5px 5px #ababab;
+    box-shadow: 3px 3px 11px #ababab;
+    margin: 10px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+    padding: 6px;
+    background: #f5f5f5;
+    display: inline-block;
+    height: 32px;
+}
+
+#logo{
+    margin-left: 10px;
+    width: 250px;
+    height: 20px;
+    
+}
+.toolbar{
+    margin-right: 10px;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    .container{
+        width:1200px;
+    }
+
+    .span15 {
+        width: 1180px;
+    }
+
+    .span14 {
+        width: 1100px;
+    }
+
+    .span13 {
+        width: 1020px;
+    }
+}
+
+span.tag:hover,span.contact:hover{
+    text-decoration: underline;
+}
+span.tag,span.contact{
+
+    cursor: pointer;
+}
+
+div.pagination ul li a:hover{
+    cursor: pointer;
+}
+.edit-testo{
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    resize: none;
+}
+
+
+.yellowed{
+    background: #ffff00;
+}
+
+.justSaved{
+    background:#c2eaaf;
+}
+
+.newPlaceholder{
+    opacity: 0.2;
+}
+.delete{
+    color:#bd362f;
+}
+.delete:hover{
+    color:red;
+}

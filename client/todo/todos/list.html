@@ -1,0 +1,63 @@
+<div class="row">
+
+    <div class="row">
+        <div class="span14">
+            <div class="span3 toolbar">
+                <form class="form-search" action="">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <input id="search-value"
+                           ng-model="searchValue" type="text"
+                           class="input-medium search-query"/>
+                    <input type="submit" class="btn btn-primary" ng-click="search(0)" value="Cerca">
+                </form>
+            </div>
+            <div class="span3 toolbar">
+                Ordina per: <a ng-click="sortBy('creataIl')">Data</a> |
+                <a ng-click="sortBy('testo')">Testo</a> |
+
+            </div>
+            <div class="span4 toolbar pagination">
+
+                <ul>
+                    <li ng-class="{disabled: currentPage == 0}">
+                        <a ng-click="search(0)">«</a>
+                    </li>
+                    <li ng-repeat="p in allPages"
+                        ng-class="{active: p == currentPage}"
+                        ng-click="setPage()">
+                        <a ng-class="{hidden: p < 0 || p >= totalPages}" ng-bind="p + 1">1</a>
+                        <span ng-class="{hidden: p >= 0 && p < totalPages}" >&nbsp;</span>
+                    </li>
+                    <li ng-class="{disabled: currentPage == totalPages - 1}">
+                        <a href ng-click="search(totalPages-1)">»</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span14">
+            <div class="span3 workBox" ng-repeat="n in todos" ng-class="{placeholder:n._id==null}">
+                <div class="workBox-header">
+                    <!--<div class="span2 pull-right">-->
+
+                    <button type="button" class="close delete" ng-click="deleteNote()">&times;</button>
+                    <span>{{n.creataIl}}</span>
+                    <!--</div>-->
+                </div>
+                <div class="workBox-body" ng-class="{justSaved:n.justSaved}" ng-edit-note ng-click="editNote()" onclick="$(this).find('textarea').focus();">
+
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <textarea cols="30" rows="10" ng-blur="saveNote()" ng-class="{hidden:!n.editing}" class="edit-testo" name="testo" ng-model="n.testo"></textarea>
+
+                    <span ng-class="{hidden:n.editing}" class="active" ng-compile ng-bind-html-unsafe="n.testoTagged"></span>
+                </div>
+                <div class="workBox-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

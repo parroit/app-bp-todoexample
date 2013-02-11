@@ -1,0 +1,33 @@
+
+    <div class="row workBox-container">
+            <div class="span7 workBox">
+                <h2>Importa todos da testo</h2>
+                <memo width="span10" rows="20" model="testo"></memo>
+                <button class="btn btn-large btn-primary" ng-click="importa()">
+                    <i class="icon-white icon-upload-alt"></i>
+                     Importa
+                </button>
+
+            </div>
+    </div>
+
+
+    </div>
+    <script type="text/javascript">
+        function importa(){
+            $.ajax({
+                url:"/importa-supernote",
+                type:"POST",
+                data:args=JSON.stringify({testo:$("#testo").val()}),
+                contentType:"application/json; charset=utf-8",
+                dataType:"json",
+                success: function(data){
+                    alert("Importate "+data.supernote.length+" supernote");
+                    window.location="/index";
+                },
+                error:function(err){
+                    alert(JSON.stringify(err));
+                }
+            })
+        }
+    </script>
