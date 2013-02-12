@@ -158,3 +158,74 @@ div.pagination ul li a:hover{
 .delete:hover{
     color:red;
 }
+
+
+/* LOGO */
+.brand{
+    margin: 2px;
+    background: url(../img/logo-eban-v3.png) no-repeat;
+    height: 24px;
+}
+
+.brand span {
+    margin-left: 34px;
+    padding-top: 30px;
+    font-size: 40px;
+    padding: 0;
+    line-height: 24px;
+    color: #007dfa;
+    text-shadow: 0 0 14px #333333;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.eban-top-menu.navbar .navbar-inner .nav > li.active > a {
+    color: white;
+    background-color: #333333;
+}
+
+.eban-top-menu.navbar .navbar-inner .nav > li:hover > a {
+    color: white;
+    background-color: #007dfa;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.eban-top-menu.navbar .navbar-inner .nav{
+    float: right;
+    margin-top: 10px;
+
+}
+.eban-top-menu.navbar,.eban-top-menu.navbar .navbar-inner{
+    background-color: #333333;
+    
+    background-image: -moz-linear-gradient(bottom,#333333,#303030);
+    background-image: -webkit-gradient(linear,0 0,0 100%,to(#303030),from(#333333));
+    background-image: -webkit-linear-gradient(bottom,#333333,#303030);
+    background-image: -o-linear-gradient(bottom,#333333,#303030);
+    background-image: linear-gradient(to top,#333333,#303030);
+    border: none;
+}
+.eban-top-menu.navbar .nav > li > a {
+
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 15px 10px;
+    color: #bbb;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 180%;
+    font-weight: bold;
+}
+img.glyphicons_020_home{
+    background-image: url(../img/glyphicons_free/glyphicons/png/glyphicons_020_home.png);
+}
+
+body {
+    padding-top: 0;
+    background-color: #333333;
+}
+
+/*.container {
+    margin-top: 20px;
+}*/
